@@ -1,0 +1,5 @@
+C:\Users\Marce\Documents\SharpDevelop Projects\nota1Intento2\Model\bin\Debug\Model.dll
+C:\Users\Marce\Documents\SharpDevelop Projects\nota1Intento2\Model\bin\Debug\Model.pdb
+C:\Users\Marce\Documents\SharpDevelop Projects\nota1Intento2\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Users\Marce\Documents\SharpDevelop Projects\nota1Intento2\Model\obj\Debug\Model.dll
+C:\Users\Marce\Documents\SharpDevelop Projects\nota1Intento2\Model\obj\Debug\Model.pdb

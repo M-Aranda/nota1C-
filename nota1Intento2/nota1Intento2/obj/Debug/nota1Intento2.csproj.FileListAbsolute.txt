@@ -1,0 +1,11 @@
+C:\Users\Marce\Documents\SharpDevelop Projects\nota1Intento2\nota1Intento2\obj\Debug\nota1Intento2.csprojResolveAssemblyReference.cache
+C:\Users\Marce\Documents\SharpDevelop Projects\nota1Intento2\nota1Intento2\obj\Debug\nota1Intento2.MainForm.resources
+C:\Users\Marce\Documents\SharpDevelop Projects\nota1Intento2\nota1Intento2\obj\Debug\nota1Intento2.csproj.GenerateResource.Cache
+C:\Users\Marce\Documents\SharpDevelop Projects\nota1Intento2\nota1Intento2\bin\Debug\nota1Intento2.exe.config
+C:\Users\Marce\Documents\SharpDevelop Projects\nota1Intento2\nota1Intento2\bin\Debug\nota1Intento2.exe
+C:\Users\Marce\Documents\SharpDevelop Projects\nota1Intento2\nota1Intento2\bin\Debug\nota1Intento2.pdb
+C:\Users\Marce\Documents\SharpDevelop Projects\nota1Intento2\nota1Intento2\obj\Debug\nota1Intento2.exe
+C:\Users\Marce\Documents\SharpDevelop Projects\nota1Intento2\nota1Intento2\obj\Debug\nota1Intento2.pdb
+C:\Users\Marce\Documents\SharpDevelop Projects\nota1Intento2\nota1Intento2\obj\Debug\nota1Intento2.MenuComida.resources
+C:\Users\Marce\Documents\SharpDevelop Projects\nota1Intento2\nota1Intento2\bin\Debug\Model.dll
+C:\Users\Marce\Documents\SharpDevelop Projects\nota1Intento2\nota1Intento2\bin\Debug\Model.pdb
