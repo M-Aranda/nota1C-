@@ -16,6 +16,7 @@ namespace nota1Intento2
 		private System.ComponentModel.IContainer components = null;
 		private System.Windows.Forms.Label lblComida;
 		private System.Windows.Forms.ComboBox cboComida;
+		private System.Windows.Forms.PictureBox pbxComida;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -40,6 +41,8 @@ namespace nota1Intento2
 		{
 			this.lblComida = new System.Windows.Forms.Label();
 			this.cboComida = new System.Windows.Forms.ComboBox();
+			this.pbxComida = new System.Windows.Forms.PictureBox();
+			((System.ComponentModel.ISupportInitialize)(this.pbxComida)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// lblComida
@@ -58,15 +61,25 @@ namespace nota1Intento2
 			this.cboComida.Size = new System.Drawing.Size(121, 21);
 			this.cboComida.TabIndex = 1;
 			// 
+			// pbxComida
+			// 
+			this.pbxComida.Location = new System.Drawing.Point(241, 19);
+			this.pbxComida.Name = "pbxComida";
+			this.pbxComida.Size = new System.Drawing.Size(573, 230);
+			this.pbxComida.TabIndex = 2;
+			this.pbxComida.TabStop = false;
+			// 
 			// MenuComida
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(351, 261);
+			this.ClientSize = new System.Drawing.Size(826, 261);
+			this.Controls.Add(this.pbxComida);
 			this.Controls.Add(this.cboComida);
 			this.Controls.Add(this.lblComida);
 			this.Name = "MenuComida";
 			this.Text = "MenuComida";
+			((System.ComponentModel.ISupportInitialize)(this.pbxComida)).EndInit();
 			this.ResumeLayout(false);
 
 		}

@@ -9,3 +9,4 @@ C:\Users\Marce\Documents\SharpDevelop Projects\nota1Intento2\nota1Intento2\obj\D
 C:\Users\Marce\Documents\SharpDevelop Projects\nota1Intento2\nota1Intento2\obj\Debug\nota1Intento2.MenuComida.resources
 C:\Users\Marce\Documents\SharpDevelop Projects\nota1Intento2\nota1Intento2\bin\Debug\Model.dll
 C:\Users\Marce\Documents\SharpDevelop Projects\nota1Intento2\nota1Intento2\bin\Debug\Model.pdb
+C:\Users\Marce\Documents\SharpDevelop Projects\nota1Intento2\nota1Intento2\obj\Debug\nota1Intento2.Imagenes.resources

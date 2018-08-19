@@ -12,6 +12,9 @@ using System.Windows.Forms;
 using Model;
 using System.Collections.Generic; //se necesita este import para usar listas
 
+using System.Reflection;
+using System.Resources;
+
 namespace nota1Intento2
 {
 	/// <summary>
@@ -40,6 +43,17 @@ namespace nota1Intento2
 			
 			cboComida.DisplayMember = "Nombre";
             cboComida.ValueMember = "Precio";
+         
+       
+            ResourceManager resources = new ResourceManager("nota1Intento2.Imagenes", Assembly.GetExecutingAssembly());
+			Bitmap bmp = (Bitmap)resources.GetObject("pizza");
+			
+
+			
+			
+			pbxComida.Image = bmp;
+			
+		
 			
 
 		}
