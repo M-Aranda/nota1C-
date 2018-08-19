@@ -22,6 +22,16 @@ namespace nota1Intento2
 	/// </summary>
 	public partial class MenuComida : Form
 	{
+		
+		 Comida c1;
+		 Comida c2;
+		 Comida c3;
+		
+		 ResourceManager resources;
+		 Bitmap pizzaBmp;
+		 Bitmap hamburguesaBmp;
+		 Bitmap pastaBmp;
+		
 		public MenuComida()
 		{
 			//
@@ -29,9 +39,9 @@ namespace nota1Intento2
 			//
 			InitializeComponent();
 			cboComida.DropDownStyle=ComboBoxStyle.DropDownList;
-			Comida c1=new Comida("Pizza",2000);
-			Comida c2=new Comida("Pasta",5000);
-			Comida c3=new Comida("Hamburguesa",1000);
+			c1=new Comida("Pizza",2000);
+			c2=new Comida("Pasta",5000);
+			c3=new Comida("Hamburguesa",1000);
 	
 			
 			List<Comida> comidasDisponibles= new List<Comida>();
@@ -45,17 +55,36 @@ namespace nota1Intento2
             cboComida.ValueMember = "Precio";
          
        
-            ResourceManager resources = new ResourceManager("nota1Intento2.Imagenes", Assembly.GetExecutingAssembly());
-			Bitmap bmp = (Bitmap)resources.GetObject("pizza");
+            resources = new ResourceManager("nota1Intento2.Imagenes", Assembly.GetExecutingAssembly());
+			pizzaBmp = (Bitmap)resources.GetObject("pizza");
+			hamburguesaBmp = (Bitmap)resources.GetObject("hamburguesa");
+			pastaBmp = (Bitmap)resources.GetObject("pasta");
 			
 
 			
 			
-			pbxComida.Image = bmp;
+			pbxComida.Image = pizzaBmp;
+			
 			
 		
 			
 
+		}
+		void CboComidaSelectedIndexChanged(object sender, EventArgs e)
+		{
+			
+			
+			if (cboComida.SelectedItem == c1)
+			{
+    			pbxComida.Image = pizzaBmp;
+			}else if (cboComida.SelectedItem == c2) {
+				
+				pbxComida.Image = pastaBmp;
+			}else if (cboComida.SelectedItem == c3) {
+				
+				pbxComida.Image = hamburguesaBmp;
+			}
+	
 		}
 	}
 }

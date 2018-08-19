@@ -60,6 +60,7 @@ namespace nota1Intento2
 			this.cboComida.Name = "cboComida";
 			this.cboComida.Size = new System.Drawing.Size(121, 21);
 			this.cboComida.TabIndex = 1;
+			this.cboComida.SelectedIndexChanged += new System.EventHandler(this.CboComidaSelectedIndexChanged);
 			// 
 			// pbxComida
 			// 
