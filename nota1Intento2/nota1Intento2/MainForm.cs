@@ -33,12 +33,11 @@ namespace nota1Intento2
 		{
 			
 			String nombreCli= txtNombreCliente.Text;
-			String dirCli=txtDireccionCliente.Text;
-			
-			MessageBox.Show("Hola "+nombreCli+" se enviara el pedido a "+ dirCli);
-			
+				
 			MenuComida mc= new MenuComida();
 			mc.Show();
+			
+			MessageBox.Show("Hola "+nombreCli+" aquí puedes ver los precios aproximados");
 			
 			
 			

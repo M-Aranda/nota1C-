@@ -17,6 +17,11 @@ namespace nota1Intento2
 		private System.Windows.Forms.Label lblComida;
 		private System.Windows.Forms.ComboBox cboComida;
 		private System.Windows.Forms.PictureBox pbxComida;
+		private System.Windows.Forms.NotifyIcon notifyIcon1;
+		private System.Windows.Forms.TextBox txtPrecio;
+		private System.Windows.Forms.Label lblPrecio;
+		private System.Windows.Forms.Button btnCambiarColor;
+		private System.Windows.Forms.ColorDialog cdFondo;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -39,9 +44,15 @@ namespace nota1Intento2
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.components = new System.ComponentModel.Container();
 			this.lblComida = new System.Windows.Forms.Label();
 			this.cboComida = new System.Windows.Forms.ComboBox();
 			this.pbxComida = new System.Windows.Forms.PictureBox();
+			this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+			this.txtPrecio = new System.Windows.Forms.TextBox();
+			this.lblPrecio = new System.Windows.Forms.Label();
+			this.btnCambiarColor = new System.Windows.Forms.Button();
+			this.cdFondo = new System.Windows.Forms.ColorDialog();
 			((System.ComponentModel.ISupportInitialize)(this.pbxComida)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -66,22 +77,59 @@ namespace nota1Intento2
 			// 
 			this.pbxComida.Location = new System.Drawing.Point(241, 19);
 			this.pbxComida.Name = "pbxComida";
-			this.pbxComida.Size = new System.Drawing.Size(573, 230);
+			this.pbxComida.Size = new System.Drawing.Size(788, 427);
 			this.pbxComida.TabIndex = 2;
 			this.pbxComida.TabStop = false;
+			// 
+			// notifyIcon1
+			// 
+			this.notifyIcon1.Text = "notifyIcon1";
+			this.notifyIcon1.Visible = true;
+			// 
+			// txtPrecio
+			// 
+			this.txtPrecio.Location = new System.Drawing.Point(68, 93);
+			this.txtPrecio.Name = "txtPrecio";
+			this.txtPrecio.ReadOnly = true;
+			this.txtPrecio.Size = new System.Drawing.Size(121, 20);
+			this.txtPrecio.TabIndex = 3;
+			// 
+			// lblPrecio
+			// 
+			this.lblPrecio.Location = new System.Drawing.Point(25, 96);
+			this.lblPrecio.Name = "lblPrecio";
+			this.lblPrecio.Size = new System.Drawing.Size(44, 23);
+			this.lblPrecio.TabIndex = 4;
+			this.lblPrecio.Text = "Precio:";
+			// 
+			// btnCambiarColor
+			// 
+			this.btnCambiarColor.Location = new System.Drawing.Point(25, 136);
+			this.btnCambiarColor.Name = "btnCambiarColor";
+			this.btnCambiarColor.Size = new System.Drawing.Size(181, 23);
+			this.btnCambiarColor.TabIndex = 5;
+			this.btnCambiarColor.Text = "Quiero cambiar el color de fondo";
+			this.btnCambiarColor.UseVisualStyleBackColor = true;
+			this.btnCambiarColor.Click += new System.EventHandler(this.BtnCambiarColorClick);
 			// 
 			// MenuComida
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(826, 261);
+			this.ClientSize = new System.Drawing.Size(1032, 458);
+			this.Controls.Add(this.btnCambiarColor);
+			this.Controls.Add(this.lblPrecio);
+			this.Controls.Add(this.txtPrecio);
 			this.Controls.Add(this.pbxComida);
 			this.Controls.Add(this.cboComida);
 			this.Controls.Add(this.lblComida);
 			this.Name = "MenuComida";
 			this.Text = "MenuComida";
+			this.Load += new System.EventHandler(this.MenuComidaLoad);
+			this.SizeChanged += new System.EventHandler(this.MenuComidaSizeChanged);
 			((System.ComponentModel.ISupportInitialize)(this.pbxComida)).EndInit();
 			this.ResumeLayout(false);
+			this.PerformLayout();
 
 		}
 	}

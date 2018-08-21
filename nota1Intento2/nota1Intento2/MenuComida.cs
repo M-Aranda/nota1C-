@@ -73,18 +73,53 @@ namespace nota1Intento2
 		void CboComidaSelectedIndexChanged(object sender, EventArgs e)
 		{
 			
+			int valor;
 			
 			if (cboComida.SelectedItem == c1)
 			{
     			pbxComida.Image = pizzaBmp;
+    			
+    			valor=c1.Precio;
+    			
+    			txtPrecio.Text=valor.ToString();
+    			
 			}else if (cboComida.SelectedItem == c2) {
 				
 				pbxComida.Image = pastaBmp;
+    			valor=c2.Precio;
+    			txtPrecio.Text=valor.ToString();
+    			
 			}else if (cboComida.SelectedItem == c3) {
 				
 				pbxComida.Image = hamburguesaBmp;
+    			valor=c3.Precio;
+    			txtPrecio.Text=valor.ToString();
 			}
 	
 		}
+		void MenuComidaSizeChanged(object sender, EventArgs e)
+		{
+			if(this.WindowState==FormWindowState.Minimized){
+				notifyIcon1.Icon=SystemIcons.Application;
+				notifyIcon1.BalloonTipText="El programa continua activo...";
+				notifyIcon1.ShowBalloonTip(1000);
+				
+			}else if(this.WindowState==FormWindowState.Normal){
+				notifyIcon1.BalloonTipText="Programa resumido.";
+				notifyIcon1.ShowBalloonTip(1000);
+			}
+	
+		}
+		void BtnCambiarColorClick(object sender, EventArgs e)
+		{
+			cdFondo.ShowDialog();
+			this.BackColor = cdFondo.Color;
+	
+		}		void MenuComidaLoad(object sender, EventArgs e)
+		{
+	
+		}
+
+
 	}
 }
